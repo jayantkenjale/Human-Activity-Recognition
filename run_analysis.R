@@ -77,16 +77,27 @@ meanStdFeature <- features[grep("mean\\(|std\\(",features$V2,ignore.case=TRUE),]
 #Adding Subject and Activties to the selected column set.
 finalColumns <- c("Subjects","ActivityLabels",as.character(meanStdFeature$V2))
 
-#Step 7: subsetting only coluns "Subject", "Activities" (descriptive leabels) and columns with mean() and std()
+#Step 7: subsetting only columns "Subject", "Activities" (descriptive leabels) and columns with mean() and std()
 tidyDataX <- subset(mergedDataX, select=finalColumns)
 
+#Step 7.1: write finalData set 
+write.table(tidyDataX, file="./data/tidyDataSet.txt")
 
 #Step 8: Create Tidy data set based on the mean of all the variables by Subjects and ActivityLabels
 #Step 8.1: GROUP BY Subject and ActivityLabels
-group <- list("Subjects","ActivityLabels")
+group <- list(tidyDataX$Subjects,tidyDataX$ActivityLabels)
 
 #Step 8.2: Caluclate the mean for all columns from Column index 3 onwards based on the group defined earlier.
 finalDataX <- aggregate(tidyDataX[,3:67], group, mean)
+# change the column names after grouping
+finalColNames <- colnames(finalDataX)
+finalColNames[1] <- "Subject"
+finalColNames[2] <- "Activity"
+
+colnames(finalDataX) <- finalColNames
+
+#Step 8.3: Write finalDataSet to a file
+write.table(finalDataX, file="./data/finalDataSet.txt")
 
 #Step 8.3: Sort the final dataset based on based on the Subject and ActivityLables
 sortedFinalDataX <- finalDataX[order(finalDataX$Group.1,finalDataX$Group.2),]
