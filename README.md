@@ -10,7 +10,7 @@ https://github.com/jayantkenjale/Human-Activity-Recognition/blob/master/Master-C
 **Link to tidy data file**
 https://github.com/jayantkenjale/Human-Activity-Recognition/blob/master/tidyDataSet.txt
 
-**Link to final dataset, averaged by every subject every activity **
+**Link to final dataset, averaged by every subject every activity**  
 https://github.com/jayantkenjale/Human-Activity-Recognition/blob/master/finalDataSet.txt
 
 ##What you can find in Script?
