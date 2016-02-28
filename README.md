@@ -1,13 +1,13 @@
 # Human-Activity-Recognition
 Tidy data for Human Activity Recognition by smart phones
 
-Link to the script:
-Check the run_analysis.R script from this repository.
+Link to the script which cleans the data:
+https://github.com/jayantkenjale/Human-Activity-Recognition/blob/master/run_analysis.R
 
 Link to the Codebook:
-Check for Master CodeBook from this repository
+https://github.com/jayantkenjale/Human-Activity-Recognition/blob/master/Master-Code-Book.pdf
 
-What you can find in Codebook?
+#What you can find in Codebook?
 
 Index of All Observation and Meta data files provided
 Description to All Variables in each file
