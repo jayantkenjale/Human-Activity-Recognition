@@ -1,7 +1,7 @@
 # Human-Activity-Recognition
 Tidy data for Human Activity Recognition by smart phones
 
-**Link to the script which cleans the data:**  
+**Link to the script run_analysis.R:**  
 https://github.com/jayantkenjale/Human-Activity-Recognition/blob/master/run_analysis.R
 
 **Link to the Codebook:**  
@@ -10,7 +10,9 @@ https://github.com/jayantkenjale/Human-Activity-Recognition/blob/master/Master-C
 **Link to tidy data file**
 https://github.com/jayantkenjale/Human-Activity-Recognition/blob/master/tidyDataSet.txt
 
-****
+**Link to final dataset, averaged by every subject every activity **
+https://github.com/jayantkenjale/Human-Activity-Recognition/blob/master/finalDataSet.txt
+
 ##What you can find in Script?
 run_analysis.R script is self explanatory, where all the steps are described in the code run_analysis.R. Some important steps are described here are mapped to the steps coded in the run_analysis.R file.  
 
@@ -25,27 +27,21 @@ Some of the most important steps below and refer them in the code run_analysis.R
 
 
 ##What you can find in Codebook?
+Please find a PDF doucments a master code book descrbies all the provided files and the dataset. You will find following details.   
 - Details about all the datasets, and how they are obtained 
-- All datasets their variables
+- All datasets with their variables and descriptions
 - Dimentions of all datasets with summary
 - Units and measures used for each variable
 
+##Why the data sets are tidy?
+1. They represents only one variable per column
+2. There are no duplicate variables, e.g. you will find either Activity or ActivityLable (which is descriptive) but not both at a same time.
+3. All the columns are labled (Added new columns Subject and ActivityLables too have column names)
+4. All other columns have new names which are described features provided in the features list.
+5. It shows long narrow dataset, only relevant columns of mean() and std()
 
-Index of All Observation and Meta data files provided
-Description to All Variables in each file
-Dimensions of each data set, to know how that fits with other datasets
-Summaries of all Datasets
 
-Final Tidy Dataset
-Check in file <FILE_NAME> in this repository
+##Final data sets?
+1. Shows data per subject per activty and their means for given colummns and following all the criteria of tidy dataset.
 
-Tidy Data sets with Averages of observations per SUBJECT per ACTIVITY 
-Check in file <AVERAGE_FILE_NAME> in this repository
-
-Explanation to the steps in run_analysis.R
-
-1.	Merge training and Test data set – 
-2.	Extract Only mean() and std() for each measurement
-3.	Descriptive activity names in dataset
-4.	Label the dataset with descriptive variable names
-5.	From Step 4 create second independent with average of each variable/each activity and each Subject.
+ 
