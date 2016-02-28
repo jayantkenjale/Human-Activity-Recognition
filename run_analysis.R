@@ -81,7 +81,7 @@ finalColumns <- c("Subjects","ActivityLabels",as.character(meanStdFeature$V2))
 tidyDataX <- subset(mergedDataX, select=finalColumns)
 
 #Step 7.1: write finalData set 
-write.table(tidyDataX, file="./data/tidyDataSet.txt")
+write.table(tidyDataX, file="./data/tidyDataSet.txt",row.names=FALSE)
 
 #Step 8: Create Tidy data set based on the mean of all the variables by Subjects and ActivityLabels
 #Step 8.1: GROUP BY Subject and ActivityLabels
@@ -97,7 +97,7 @@ finalColNames[2] <- "Activity"
 colnames(finalDataX) <- finalColNames
 
 #Step 8.3: Write finalDataSet to a file
-write.table(finalDataX, file="./data/finalDataSet.txt")
+write.table(finalDataX, file="./data/finalDataSet.txt",row.names=FALSE)
 
 #Step 8.3: Sort the final dataset based on based on the Subject and ActivityLables
 sortedFinalDataX <- finalDataX[order(finalDataX$Group.1,finalDataX$Group.2),]
