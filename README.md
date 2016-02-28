@@ -43,8 +43,8 @@ Please find a PDF doucments a master code book descrbies all the provided files 
 
 ##Final datasets?
 **Tidy Data**    
-https://github.com/jayantkenjale/Human-Activity-Recognition/blob/master/tidyDataSet.txt
-**Final Data- means grouped by Subject and activity**
-https://github.com/jayantkenjale/Human-Activity-Recognition/blob/master/finalDataSet.txt
+https://github.com/jayantkenjale/Human-Activity-Recognition/blob/master/tidyDataSet.txt  
+**Final Data- means grouped by Subject and activity**  
+https://github.com/jayantkenjale/Human-Activity-Recognition/blob/master/finalDataSet.txt  
 
 Shows data per subject per activty and their means for given colummns and following all the criteria of tidy dataset.
