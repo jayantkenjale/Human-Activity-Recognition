@@ -7,10 +7,10 @@ https://github.com/jayantkenjale/Human-Activity-Recognition/blob/master/run_anal
 **Link to the Codebook:**  
 https://github.com/jayantkenjale/Human-Activity-Recognition/blob/master/Master-Code-Book.pdf
 
-**Link to tidy data file**
+**Link to tidy data file:**  
 https://github.com/jayantkenjale/Human-Activity-Recognition/blob/master/tidyDataSet.txt
 
-**Link to final dataset, averaged by every subject every activity**  
+**Link to final dataset, averaged by every subject every activity:**    
 https://github.com/jayantkenjale/Human-Activity-Recognition/blob/master/finalDataSet.txt
 
 ##What you can find in Script?
@@ -41,7 +41,10 @@ Please find a PDF doucments a master code book descrbies all the provided files 
 5. It shows long narrow dataset, only relevant columns of mean() and std()
 
 
-##Final data sets?
-1. Shows data per subject per activty and their means for given colummns and following all the criteria of tidy dataset.
+##Final datasets?
+**Tidy Data**    
+https://github.com/jayantkenjale/Human-Activity-Recognition/blob/master/tidyDataSet.txt
+**Final Data- means grouped by Subject and activity**
+https://github.com/jayantkenjale/Human-Activity-Recognition/blob/master/finalDataSet.txt
 
- 
+Shows data per subject per activty and their means for given colummns and following all the criteria of tidy dataset.
